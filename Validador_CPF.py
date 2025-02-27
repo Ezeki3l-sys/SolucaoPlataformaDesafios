@@ -25,5 +25,3 @@ if (verdadeiro[-2] != digito1 and verdadeiro[-1] != digito2):
     print("CPF inválido! \n")
 else:
     print("CPF válido! \n")
-
-    
