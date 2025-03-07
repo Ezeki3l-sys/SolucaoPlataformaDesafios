@@ -1,1 +1,1 @@
-"{'Vitorr': {'Matem�tica': [5.0, 1.25], 'Portugu�s': [5.0, 1.25], 'Hist�ria': [5.0, 1.25], 'Filosofia': [5.0, 1.25]}, 'Veyr': {'Matem�tica': [5.0, 1.25], 'Portugu�s': [5.0, 1.25], 'Hist�ria': [5.0, 1.25], 'Filosofia': [5.0, 1.25]}}"
+{"A": {"Matemática": [1.0, 1.0, 1.0, 1.0, 1.0], "Português": [1.0, 1.0, 1.0, 1.0, 1.0], "História": [1.0, 1.0, 1.0, 1.0, 1.0], "Filosofia": [1.0, 1.0, 1.0, 1.0, 1.0]}}
