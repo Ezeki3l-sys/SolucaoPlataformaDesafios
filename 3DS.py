@@ -63,16 +63,22 @@ else:
             file.write("<h1>")
             file.write(c)
             file.write("</h1><br>")
+            print(c, "c")
+            print(v, "c")
             for m in v:
                 file.write(m)
+                print(m, "m")
                 file.write(": <br>")
                 n2 = 0
                 for notis in v[materias[n]]:
+                    print(notis, "notis")
+                    print(v[materias[n]], "v[materias[n]]")
                     if (n2==4):
                         file.write("Média - ")
                     else:
                         file.write(f"{n2+1}° Bimestre - ")
                     file.write(str(notis))
+                    print(notis)
                     file.write("<br>")
                     n2+=1
                 file.write("<br>")
