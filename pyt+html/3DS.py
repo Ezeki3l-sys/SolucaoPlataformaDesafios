@@ -51,59 +51,34 @@ else:
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Notas 3°DS</title>
-        <style rel="styleshet">
-            table, tr, td{
-                border: 1px solid black;
-            }
-        </style>
     </head>
     <body>
         <h1>Notas de cada aluno</h1>
         <hr>
-      ''' 
-        )
- 
+      '''  
+    )
+        
         for c,v in DS.items():
-            file.write(
-            f'''
-            <table>
-            <caption style="font-size: xx-large;">{c}</caption>
-            <tr>
-                <th></th>
-                <th>1° Bimestre</th>
-                <th>2° Bimestre</th>
-                <th>3° Bimestre</th>
-                <th>4° Bimestre</th>
-                <th>Media</th>
-            </tr>
-            '''
-            )
             n = 0
-            file.write(f'<tr>')
+            file.write("<h1>")
+            file.write(c)
+            file.write("</h1><br>")
+            print(c, "c")
+            print(v, "c")
             for m in v:
+                file.write(m)
+                print(m, "m")
+                file.write(": <br>")
                 n2 = 0
                 for notis in v[materias[n]]:
-                    file.write(f'<td>{materias[n2]}</td>')
-                    file.write(f"<td>{str(notis)}</td>")
-                n2+=1
-            file.write(f'</tr>')
+                    print(notis, "notis")
+                    print(v[materias[n]], "v[materias[n]]")
+                    if (n2==4):
+                        file.write("Média - ")
+                    else:
+                        file.write(f"{n2+1}° Bimestre - ")
+                    file.write(str(notis))
+                    file.write("<br>")
+                    n2+=1
+                file.write("<br>")
             n+=1
-        # for c,v in DS.items():
-        #     n = 0
-        #     file.write("<h1>")
-        #     file.write(c)
-        #     file.write("</h1><br>")
-        #     for m in v:
-        #         file.write(m)
-        #         file.write(": <br>")
-        #         n2 = 0
-        #         for notis in v[materias[n]]:
-        #             if (n2==4):
-        #                 file.write("Média - ")
-        #             else:
-        #                 file.write(f"{n2+1}° Bimestre - ")
-        #             file.write(str(notis))
-        #             file.write("<br>")
-        #             n2+=1
-        #         file.write("<br>")
-        #     n+=1
