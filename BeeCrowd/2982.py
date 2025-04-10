@@ -9,7 +9,6 @@ for n in range(ofertas):
         G = G+int(valor)
     else:
         V = V+int(valor)
-
 if (V<G):
     print("NAO VAI TER CORTE, VAI TER LUTA!")
 else:
